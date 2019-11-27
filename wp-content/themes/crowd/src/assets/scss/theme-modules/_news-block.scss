@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*==================================
+=            News Block            =
+==================================*/
+
+.news-block {
+	display: inline-block;
+	width: 100%;
+	padding: 80px 0 0;
+
+	@media screen and (max-width: $big-mobile) {
+		padding: 80px 0 10px;
+
+		.col {
+			width: 100%;
+
+			.blokk-card-b {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	/* Cards list */
+	.blokk-cards-list-a {
+		@media screen and (max-width: $big-mobile) {
+			max-width: 330px;
+			margin: auto;
+		}
+	}
+	
+
+	/* Blokk card B */
+	.blokk-card-b {
+		@media screen and (max-width: $big-mobile) {
+			/* Card Thumbnail */
+			.card-thumbnail {
+				display: none;
+			}
+		}
+	}
+	
+}
+
+/*=====  End of News Block  ======*/

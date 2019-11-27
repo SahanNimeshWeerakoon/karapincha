@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*=========================================
+=            Blokk Our Partners            =
+=========================================*/
+
+.blokk-our-partners-a {
+    display: inline-block;
+    width: 100%;
+
+    .title-section {
+        text-align: center;
+        position: relative ;
+
+        &:before {
+            content: "";
+            height: 1px;
+            width: calc(50% - 65px);
+            position: absolute;
+            background: #DEEEF3;
+            top: 0;
+            bottom: 0;
+            left: -15px;
+            margin: auto;
+            z-index: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 14px;
+            color: #061F47;
+            text-transform: uppercase;
+            letter-spacing: 0.16px;
+        }
+
+        &:after {
+            content: "";
+            height: 1px;
+            width: calc(50% - 65px);
+            background: #DEEEF3;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -15px;
+            margin: auto;
+            z-index: 0;
+        }
+    }
+
+    .logo-section {
+        display: table;
+        margin: 48px 0px;
+        width: 100%;
+        text-align: center;
+
+        .logo {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0px 15px;
+
+            img { 
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: $big-mobile) {
+            text-align: left;
+            padding: 0 15px;
+
+            .logo {
+                display: inline-block;
+                width: 50%;
+                margin-bottom: 30px;
+
+                img {
+                    width: 100%;
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+/*=====  End of Blokk Our Partners  ======*/

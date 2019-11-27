@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/*=========================================
+=            App footer widget            =
+=========================================*/
+
+.blokk-footer-a-widget {
+	@extend %left-wide;
+
+	/* Widget heading */
+	.blokk-footer-a-widget-heading {
+		h3 {
+			margin: 0;
+			font-size: 14px;
+			color: #FFFFFF;
+			letter-spacing: 0.5px;
+			font-weight: 300;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			display: none;
+		}
+	}
+
+	/* Widget content */
+	.blokk-footer-a-widget-content {
+		
+		/* Footer logo */
+		.footer-logo {
+			@include size(192px, 45px);
+			display: inline-block;
+			margin: 0 0 20px;
+
+			a {
+				display: inline-block;
+				outline: none;
+			}
+		}
+		
+		/* Paragraph */
+		p {
+			font-size: 14px;
+			color: #FFFFFF;
+			letter-spacing: 0;
+			line-height: 25px;
+			font-weight: 300;
+			margin: 0 0 10px;
+
+			a {
+				font-weight: 400;
+				font-size: 13px;
+				color: #44C7F4;
+				letter-spacing: 0;
+				line-height: 25px;
+			}
+		}
+
+		/* List items */		
+		ul {
+			@include reset();
+			li {
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+				a {
+					font-size: 14px;
+					color: #FFFFFF;
+					letter-spacing: 0.5px;
+					font-weight: 300;
+				}
+			}
+		}
+
+		/* Social links */
+		.social-links {
+			margin: 25px 0 0 -10px;
+
+			@media screen and (max-width: $big-mobile) {
+				margin: 20px 0 40px -10px;
+				padding: 0 0 40px;
+				border-bottom: 1px solid #092B62;
+			}
+
+			li {
+				display: inline;
+				a {
+					padding: 0 10px;
+					font-size: 20px;
+					color: #AAB2BD;
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of App footer widget  ======*/

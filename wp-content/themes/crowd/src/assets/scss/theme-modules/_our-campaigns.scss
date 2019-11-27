@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*=====================================
+=            Our campaigns            =
+=====================================*/
+
+.our-campaigns {
+	display: inline-block;
+	width: 100%;
+	margin: -120px 0 40px;
+	text-align: center;
+
+	/* Card Block */
+	.blokk-card-a {
+		margin-bottom: 60px;
+		text-align: left;
+	}
+
+	.col {
+		// float: none;
+		// display: inline-block;
+		// margin-left: -4px;
+
+		&:not(:nth-child(-n+3)) {
+			.blokk-card-a {
+				&:before, &:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Our campaigns  ======*/

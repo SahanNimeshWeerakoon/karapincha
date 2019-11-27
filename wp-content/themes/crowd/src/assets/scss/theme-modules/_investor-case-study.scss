@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*==========================================
+=            Investor Case Study            =
+==========================================*/
+
+.investor-case-study {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 90px;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		height: 300px;
+		left: 0;
+		right: 0;
+		top: -300px;
+		background: #F5F8FF;
+		z-index: 0;
+	}
+}
+
+/*=====  End of Investor Case Study  ======*/

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*======================================================
+=            Blokk Description Description A           =
+======================================================*/
+
+$description-font-color : $text-base-color;
+$description-font-size : $font-size-md;
+
+.blokk-section-description-a {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+
+	p {
+		font-size: $description-font-size;
+		color: $description-font-color;
+		letter-spacing: 0;
+		line-height: 26px;
+		font-weight: 300;
+		margin: 0;
+		
+		&:not(:last-of-type) {
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			line-height: 24px;
+			max-width: 330px;
+			margin: auto;
+			text-align: justify;
+    		text-justify: inter-word;
+		}
+	}
+}
+
+/*=====  End of Blokk Description Description A ======*/

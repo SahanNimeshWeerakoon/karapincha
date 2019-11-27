@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/*==============================================
+=            Blokk Feature Blocks A            =
+==============================================*/
+
+.blokk-feature-blocks-a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+
+	.col {
+		padding: 0;
+		float: none;
+    	display: inline-block;
+    	margin-left: -4px;
+
+		@media screen and (max-width: $big-mobile) {
+			width: 100%;
+			text-align: center;
+
+			.feature-block {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			&:last-of-type {
+				.blokk-feature-block-a {
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+	}
+
+	.blokk-feature-block-a {
+
+		.icon {
+
+			&:before {
+				content: "";
+				height: 1px;
+				width: calc(50% - 65px);
+				background: #DEEEF3;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				z-index: 0;
+			}
+
+			&:after {
+				content: "";
+				height: 1px;
+				width: calc(50% - 65px);
+				background: #DEEEF3;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+				z-index: 0;
+			}
+
+			span {
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+
+	.col {
+		&:first-of-type {
+			.blokk-feature-block-a {
+				.icon {
+					&:before {
+						display: none;
+					}
+				}				
+			}
+		}
+
+		&:last-of-type {
+			.blokk-feature-block-a {
+				.icon {
+					&:after {
+						display: none;
+					}
+				}				
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk Feature Blocks A  ======*/
+
+
+/*=============================================
+=            Blokk Feature Block A            =
+=============================================*/
+
+$icon-size : 70px;
+$icon-size-big-mobile : 60px;
+
+$icon-bg-color : #44C7F4;
+
+$title-color : #242E46;
+
+$title-size : 16px;
+$title-size-big-mobile : 16px;
+
+$description-color : $text-base-color;
+
+$description-size : $font-size-md;
+$description-size-big-mobile : $font-size-md;
+
+.blokk-feature-block-a {
+	display: inline-block;
+	width: 100%;
+
+	@media screen and (max-width: $big-mobile) {
+		max-width: 330px;
+		margin: 0 0 35px;
+	}
+
+	/* Icon */
+	.icon {
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin: 0 0 15px;
+		//@include size($icon-size);
+		height: $icon-size;
+
+		span {
+			display: inline-block;
+			height: $icon-size;
+			line-height: $icon-size;
+			text-align: center;
+			// background: $icon-bg-color;
+			border-radius: 100%;
+
+			img {
+				max-height: $icon-size;
+				max-width: 90px;
+			}
+		}
+	}
+
+	/* Data */
+	.data {
+		
+		/* Title */
+		.title {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			margin: 0 0 20px;
+
+			label {
+				font-size: $title-size;
+				color: $title-color;
+				letter-spacing: 0.47px;
+				margin: 0;
+				font-weight: 500;
+			}
+		}
+
+		/* Description */
+		.description {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+
+			p {
+				font-size: $description-size;
+				color: $description-color;
+				letter-spacing: 0;
+				line-height: 24px;
+				font-weight: 300;
+				max-width: 275px;
+				margin: auto;
+			}
+		}		
+	}
+
+
+	@media screen and (max-width: $big-mobile) {
+		display: table;
+		width: 100%;
+
+		/* Icon */
+		.icon {
+			display: table-cell;
+			margin: 0;
+			// width: auto;
+			vertical-align: top;
+			text-align: left;
+			@include size($icon-size-big-mobile);
+
+			span {
+				@include size($icon-size-big-mobile);
+				line-height: $icon-size-big-mobile;
+
+				img {
+					max-height: $icon-size-big-mobile;
+				}
+			}
+		}
+
+		/* Data */
+		.data {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0 0 0 20px;
+
+			/* Title */
+			.title {
+				display: inline-block;
+				width: 100%;
+				text-align: left;
+				margin: 0 0;
+
+				label {
+					width: 100%;
+					font-size: $title-size-big-mobile;
+					letter-spacing: 0.41px;
+				}
+			}
+
+			/* Description */
+			.description {
+				display: inline-block;
+				width: 100%;
+				text-align: left;
+
+				p {
+					font-size: $description-size-big-mobile;
+					width: 100%;
+					max-width: 100%;
+					margin: 0;
+				}
+			}	
+		}
+	}
+}
+
+/*=====  End of Blokk Feature Block A  ======*/

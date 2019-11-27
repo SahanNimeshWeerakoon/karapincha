@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*================================
+=            Our Team            =
+================================*/
+
+.our-team {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 0 0 40px;
+
+	@media screen and (max-width: $big-mobile) {
+		// display: none;
+	}
+
+	/* Branding line */
+	.blokk-branding-line {
+		margin: 0 0 15px;
+	}	
+
+	/* Section Description */
+	.section-description {
+		max-width: 722px;
+	}
+}
+
+/*=====  End of Our Team  ======*/
+
+
+/*=========================================
+=            Our Team Profiles            =
+=========================================*/
+
+.our-team-profiles {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 20px;
+
+	@media screen and (max-width: $big-mobile) {
+		.blokk-card-f {
+			display: block;
+			margin: 0 auto 40px;
+		}
+	}
+}
+
+/*=====  End of Our Team Profiles  ======*/

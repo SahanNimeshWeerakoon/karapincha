@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*====================================
+=            Blokk card D            =
+====================================*/
+
+$card-d-title-font-size : 18px;
+$card-d-title-font-size-tablet : 18px;
+$card-d-title-font-size-big-mobile : 16px;
+
+$card-d-title-color : #2C2C2C;
+$card-d-description-color : $text-base-color;
+
+.blokk-card-d {
+	display: inline-block;
+	width: 100%;
+	padding: 30px;
+	background: #FFFFFF;
+	border: 1px solid #D2DDF9;
+	border-radius: 3px;
+	position: relative;
+	text-align: center;
+
+	/* Card Thumbnail */
+	.card-thumbnail {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		margin: 0 0 25px;
+
+		// Image
+		img, svg {
+			max-width: 100%;
+			max-height: 110px;
+			// width: 100%;
+			// border-radius: 2px;
+		}
+	}
+
+	/* Card Data */
+	.card-data {
+		display: inline-block;
+		width: 100%;
+
+		// Addon
+		.addon {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 15px;
+
+			span {
+				display: inline-block;
+				@include size(30px);
+				line-height: 30px;
+				text-align: center;
+				border-radius: 100%;
+				font-size: 15px;
+				color: #F4F4F4;
+				letter-spacing: 0.44px;
+				font-weight: 600;
+				background: #F47721;
+			}
+		}
+
+		// Title
+		.title {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 15px;
+
+			h2 {
+				margin: 0;
+				font-weight: 500;
+				font-size: $card-d-title-font-size;
+				color: $card-d-title-color;
+				letter-spacing: 0;
+				line-height: 24px;
+			}
+
+			@media screen and (max-width: $big-mobile) {
+				h2 {
+					font-size: $card-d-title-font-size-big-mobile;
+				}
+			}
+		}
+
+		// Description
+		.description {
+			display: inline-block;
+			width: 100%;
+
+			p {
+				font-weight: 300;
+				font-size: 13px;
+				color: $card-d-description-color;
+				letter-spacing: 0;
+				line-height: 19px;
+				margin: 0 auto;
+				max-width: 246px;
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk card D  ======*/

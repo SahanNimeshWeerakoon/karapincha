@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*=============================================
+=            Blokk counter block A            =
+=============================================*/
+
+$label-font-size : 59px;
+$label-font-size-tablet : 48px;
+$label-font-size-big-mobile : 36px;
+$label-font-size-mobile : 36px;
+
+$label-color : $white;
+
+// $span-font-size : 14px;
+// $span-font-size-big-mobile : 14px;
+
+$span-color : $white;
+$border-color : rgba(255, 255, 255, 0.5);
+
+.blokk-counter-block-a {
+	display: table-cell;
+	vertical-align: top;
+	padding: 5px 30px 10px;
+
+	&:not(:last-child) {
+		border-right: 1px solid $border-color;
+	}
+
+	@media screen and (max-width: $big-mobile) {
+		padding: 0;
+		margin: 0 0 15px;
+		display: block;
+		width: 100% !important;
+		border: none !important;
+	}
+
+	label {
+		display: inline-block;
+		width: 100%;
+		font-size: $label-font-size;
+		color: $label-color;
+		letter-spacing: 0.27px;
+		line-height: 53px;
+		text-shadow: 0 2px 11px rgba(21,24,35,0.83);
+		position: relative;
+		font-weight: 600;
+		margin: 0;
+
+		@media screen and (max-width: $tablet) {
+			font-size: $label-font-size-tablet;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			font-size: $label-font-size-big-mobile;
+			letter-spacing: 0.16px;
+		}
+
+		small {
+			font-size: 14px;
+			margin: 0 -25px 0 0;
+			padding: 0;
+			line-height: 1;
+			position: absolute;
+			bottom: 5px;
+			right: 0;
+			font-weight: 400;
+			// display: none;
+
+			@media screen and (max-width: $big-mobile) {
+				// display: none;
+				position: relative;
+			}
+		}
+	}
+
+	> span {
+		display: inline-block;
+		width: 100%;
+		color: $span-color;
+		letter-spacing: 0.02px;
+		margin: 8px 0 0;
+
+		@media screen and (max-width: $big-mobile) {
+			margin: 0px 0 0;
+		}
+	}
+}
+
+/*=====  End of Blokk counter block A  ======*/

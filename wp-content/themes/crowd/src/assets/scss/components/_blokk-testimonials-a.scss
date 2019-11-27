@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+$title-font-size : 21px;
+$title-font-size-big-mobile : 21px;
+
+$author-img-size : 125px;
+$author-img-size-big-mobile : 66px;
+
+$testimony-font-size : 19px;
+$testimony-font-size-big-mobile : 14px;
+
+$author-name-font-size : 20px;
+$author-name-font-size-big-mobile : 15px;
+
+$author-title-font-size : 13px;
+$author-title-font-size-big-mobile : 11px;
+
+$logo-height : 115px;
+
+$logo-arrow-height : 16px;
+
+/*============================================
+=            Blokk Testimonials A            =
+============================================*/
+
+.blokk-testimonials-a {
+	display: inline-block;
+	width: 100%;
+	background: #061F47;
+	padding: 80px 0 0;
+	color: #fff;
+
+	@media screen and (max-width: $big-mobile) {
+		padding: 50px 0 0;
+	}
+
+	/* Section Title */
+	.section-title {
+		margin: 0 0 70px;
+
+		// Title
+		.title {
+			color: #fff;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			margin: 0 0 35px;
+
+			// Title
+			.title {
+				font-size: $title-font-size-big-mobile;
+				letter-spacing: 0.25px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk Testimonials A  ======*/
+
+
+/*=================================================
+=            Blokk Testimonials List A            =
+=================================================*/
+
+.blokk-testimonials-list-a {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+
+	/* Testimonial Items */
+	.testimonial-items{
+		max-width: 780px;
+		margin: auto;
+
+		@media screen and (max-width: $big-mobile) {
+			max-width: 330px;
+		}
+	}
+
+	/* Testimonial Item */
+	.testimonial-item {
+		display: table; 
+		width: 100%;
+		max-width: 780px;
+		margin: auto;
+		outline: none;
+
+		@media screen and (max-width: $small-mobile) {
+			display: inline;
+			padding: 0px;
+			text-align: center;
+		}
+
+		// Thumb Image
+		.thumb-image {
+			display: table-cell;
+			vertical-align: top;
+			@include size($author-img-size);
+			border-radius: 100%;
+			
+			@media screen and (max-width: $big-mobile) {
+				display: inline-block;
+				height:  $author-img-size-big-mobile;
+				width: 100%;
+				margin: 0 auto 22px;
+			}
+
+			img {
+				border-radius: 100%;
+				@include size($author-img-size);
+
+				@media screen and (max-width: $big-mobile) {
+					@include size($author-img-size-big-mobile);
+					margin: auto;
+				}
+			}
+		}
+
+		// Testimony
+		.testimony {
+			display: table-cell;
+			vertical-align: top;
+			padding: 0 0 0 70px;
+			
+			@media screen and (max-width: $big-mobile) {
+				display: inline-block;
+				padding: 0px;
+			}
+
+			// Quote
+			.quote {
+				display: inline-block;
+				width: 100%;
+				margin: 0 0 25px;
+
+				p {
+					font-weight: 300;
+					font-size: 19px;
+					color: #FFFFFF;
+					letter-spacing: 0.22px;
+					line-height: 34px;
+					margin: 0;
+
+					@media screen and (max-width: $big-mobile) {
+						font-size: $testimony-font-size-big-mobile;
+						text-align: center;
+						letter-spacing: 0.16px;
+						line-height: 24px;
+						max-width: 260px;
+						margin: auto;
+					}
+				}
+			}
+
+			// Author
+			.author {
+				display: inline-block;
+				width: 100%;
+				span {
+					display: inline-block;
+					width: 100%;
+
+					&.name {
+						font-size: $author-name-font-size;
+						color: #FFFFFF;
+						letter-spacing: 0.24px;
+						font-weight: 600;
+						margin: 0 0 5px;
+					}
+
+					&.title {
+						font-size: $author-title-font-size;
+						color: #DEE4F4;
+						letter-spacing: 0.15px;
+					}
+
+					@media screen and (max-width: $big-mobile) {
+						text-align: center;
+
+						&.name {
+							font-size: $author-name-font-size-big-mobile;
+						}
+
+						&.title {
+							font-size: $author-title-font-size-big-mobile;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/* Testimonial controls */	
+	.testimonial-controls {
+		@extend %left-wide;
+		@extend %vertical-center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 44px;
+		margin: -35px 0 0;
+
+		@media screen and (max-width: $big-mobile) {
+			display: none;
+		}
+
+		ul {
+			@extend %left-wide;
+			@include reset();
+			position: relative;
+			height: 44px;
+
+			li {
+				position: absolute;
+				cursor: pointer;
+
+				// Prev
+				&.prev {
+					left: 15px;
+				}
+
+				// Next
+				&.next {
+					right: 15px;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk Testimonials List A  ======*/
+
+
+/*====================================================
+=            Blokk Testimonials A Bullets            =
+====================================================*/
+
+// .blokk-testimonials-a-bullets {
+// 	@extend %left-wide;
+// 	background-color: $navy;
+// 	margin-top: 80px;
+
+// 	ul {
+// 		@include reset();
+// 		display: table;
+// 		width: 100%;
+// 		margin: auto;
+// 		// max-width: 970px;
+
+// 		li {
+// 			display: table-cell;
+// 			vertical-align: middle;
+// 			position: relative;
+// 			height: 125px;
+// 			text-align: center;
+// 			opacity: 0.5;
+// 			cursor: pointer;
+
+// 			&.active,
+// 			&:hover {
+// 				opacity: 1;
+// 			}
+
+// 			&.active{
+// 				opacity: 1;
+
+// 				&:after {
+// 					position: absolute;
+// 					top: -16px;
+// 					content: "";
+// 					height: 16px;
+// 					width: 100px;
+// 					left: 0;
+// 					right: 0;
+// 					margin: auto;
+// 					background: {
+// 						image : url(assets/images/selected-brand-arrow.svg);
+// 						position : center;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	@media screen and (max-width: 991px) {
+// 		ul {
+// 			max-width: 970px;
+
+// 			li {
+// 				img {
+// 					max-height: 22px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+.blokk-testimonials-a-bullets {
+	display: inline-block;
+	width: 100%;
+	margin: 85px 0 0;
+	text-align: center;
+	height: $logo-height;
+	background-color: #001434;
+
+	.list {
+		span {
+			outline: none;
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	
+	.slick-list {
+		overflow: visible;
+	}
+	
+	.slide {
+		// opacity: 0;
+		opacity: 0.5;
+		height: $logo-height;
+		line-height: $logo-height;
+		margin: auto;
+		text-align: center;
+
+		img {
+			display: inline-block;
+		}
+
+		&.slick-active {
+			opacity: 0.5;
+		}
+
+		&.active {
+			opacity: 1;
+		}
+	
+		&.slick-current {
+			opacity: 1;
+			position: relative;
+	
+			&:after {
+				position: absolute;
+				top: -$logo-arrow-height;
+				content: "";
+				height: $logo-arrow-height;
+				left: 0;
+				right: 0;
+				margin: auto;
+				background: {
+					image : url(assets/images/selected-brand-arrow.svg);
+					position : center;
+					repeat: no-repeat;
+				}
+			}
+		}
+	}
+}
+
+	
+
+/*=====  End of Blokk. Testimonials A Bullets  ======*/

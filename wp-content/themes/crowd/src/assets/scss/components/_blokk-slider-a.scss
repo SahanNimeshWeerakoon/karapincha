@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*======================================
+=            Blokk Slider A            =
+======================================*/
+
+.blokk-slider-a {
+	display: inline-block;
+	width: 100%;
+	margin: -120px 0 0;
+
+	.slick-list {
+		overflow: visible;
+	}
+	
+	// /* Slides */
+	// .slides {
+	// 	display: inline-block;
+	// 	width: 100%;
+
+	// 	// Slides
+	// 	.slide-item {
+	// 		display: inline-block;
+	// 		max-width: 344px;
+	// 	}
+	// }
+}
+
+/*=====  End of Blokk Slider A  ======*/
+
+
+/*=================================================
+=            Blokk slider a controller            =
+=================================================*/
+
+.blokk-slider-a-controller {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	height: 42px;
+	margin: -228px 0 65px;
+	float: left;
+
+	&:after {
+		position: absolute;
+		content: "";
+		height: 1px;
+		width: 100%;
+		background: #DEEEF3;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+
+	&:before {
+		position: absolute;
+		content: "";
+		height: 55px;
+		width: 1px;
+		background: #DEEEF3;
+		margin: auto;
+		left: 0;
+		right: 0;
+		bottom: 40px;
+		z-index: 0;
+	}
+
+	@media screen and (max-width: $big-mobile) {
+		&:after,
+		&:before {
+			// display: none;
+		}
+	}
+
+	/* Navigation */
+	.nav {
+		width: 100%;
+		max-width: 624px;
+		position: relative;
+		margin: auto;
+		display: inline-block;
+		@include reset();
+		height: 42px;
+
+		@media screen and (max-width: $big-mobile) {
+			display: none;
+		}
+
+		li {
+			display: inline;
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			z-index: 1;
+			cursor: pointer;
+			outline: none;
+
+			&.prev{
+				left: 0;
+			}
+			&.next{
+				right: 0;
+			}
+		}
+	}
+	
+}
+
+/*=====  End of Blokk slider a controller  ======*/

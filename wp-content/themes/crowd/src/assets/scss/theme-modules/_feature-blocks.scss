@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*======================================
+=            Feature Blocks            =
+======================================*/
+
+.feature-blocks {
+	display: inline-block;
+	width: 100%;
+	padding: 90px 0 50px;
+	
+	/* Left */	
+	.left {
+		border-right: 1px solid #DEEEF3;
+	}
+
+	/* Right */	
+	.right {}
+
+	@media screen and (max-width: $big-mobile) {
+		padding: 0;
+
+		/* Left */
+		.left {
+			border: 0;
+		}
+	}
+}
+
+/*=====  End of Feature Blocks  ======*/

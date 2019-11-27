@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*===========================================
+=            Blokk widget chip A            =
+===========================================*/
+
+.blokk-widget-chip-a {
+	display: table;
+	width: 100%;
+	padding: 30px 0;
+
+	&:first-child {
+		padding-top: 0;
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+
+	&:not(:last-of-type) {
+		border-bottom: 1px solid #DEEEF3;
+		// margin: 0 0 30px;
+	}
+
+	/* Picture */
+	.picture {
+		display: table-cell;
+		vertical-align: top;
+		width: 90px;
+
+		img {
+			margin: 0;
+			border-radius: 100%;
+			width: 90px;
+		}
+	}
+	
+	/* Data */
+	.data {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 20px;
+
+		// Name
+		.name {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 10px;
+
+			h2 {
+				font-size: 18px;
+				line-height: 30px;
+				margin: 0;
+				float: left;
+			}
+
+			a {
+				float: right;
+				line-height: 30px;
+
+				img {
+					height: 20px;
+				}
+			}
+		}
+
+		span {
+			display: inline-block;
+			width: 100%;
+			font-weight: 300;
+			line-height: 24px;
+		}
+
+		// Title
+		.title {}
+
+		// Education
+		.education {}
+
+		@media screen and (max-width: $big-mobile) {
+			// Name
+			.name {
+
+				h2 {
+					font-size: 14px;
+					line-height: 30px;
+				}
+			}
+		}
+	}	
+}
+
+/*=====  End of Blokk widget chip A  ======*/

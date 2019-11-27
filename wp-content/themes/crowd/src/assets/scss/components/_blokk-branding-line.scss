@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*===========================================
+=            Blokk Branding Line            =
+===========================================*/
+
+/* Branding line */
+.blokk-branding-line {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 0 0 10px;
+
+	.vertical-line {
+		display: inline-block;
+		width: 1px;
+		height: 60px;
+		background: #DEEEF3;
+		position: relative;
+
+		&.dot {
+			&:after {
+				content: "";
+				@include size(8px);
+				border-radius: 100%;
+				position: absolute;
+				background: #F47721;
+				margin: auto;
+				left: -4px;
+				right: 0;
+				bottom: -8px;
+			}
+		}
+
+		&.blue {
+			&:after {
+				background: #44C7F4;
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk Branding Line  ======*/

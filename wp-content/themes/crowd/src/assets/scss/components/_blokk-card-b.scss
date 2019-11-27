@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*====================================
+=            Blokk card B            =
+====================================*/
+
+$card-b-title-font-size : 18px;
+$card-b-title-font-size-tablet : 18px;
+$card-b-title-font-size-big-mobile : 16px;
+
+$title-color : #242E46;
+
+$description-color : $text-base-color;
+
+.blokk-card-b {
+	display: inline-block;
+	width: 100%;
+	padding: 15px;
+	background: #FFFFFF;
+	border: 1px solid #D2DDF9;
+	border-radius: 3px;
+	position: relative;
+	text-align: left;
+
+	&:not(:last-of-type) {
+		margin-bottom: 33px;
+	}
+
+	/* Card Thumbnail */
+	.card-thumbnail {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+
+		// Image
+		img {
+			width: 100%;
+			border-radius: 2px;
+			max-width: 100%;
+		}
+
+		// Icon
+		.icon {
+			@include size(33px);
+			line-height: 27px;
+			border-radius: 100%;
+			position: absolute;
+			background: #44C7F4;
+			border: 3px solid #FFFFFF;
+			text-align: center;
+			color: #fff;
+			bottom: -20px;
+			right: 15px;
+
+			i {}
+		}
+	}
+
+	/* Card Data */
+	.card-data {
+		display: inline-block;
+		width: 100%;
+		padding: 15px;
+
+		// Credits
+		.credits {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 15px;
+
+			span {
+				font-weight: 300;
+				font-size: 10px;
+				color: #657396;
+				letter-spacing: 0;
+				line-height: 19px;
+			}
+		}
+
+		// Title
+		.title {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 15px;
+
+			h2 {
+				margin: 0;
+				font-weight: 500;
+				font-size: $card-b-title-font-size;
+				color: $title-color;
+				letter-spacing: 0;
+				line-height: 24px;
+
+				a {
+					color: $title-color;
+				}
+			}
+
+			@media screen and (max-width: $big-mobile) {
+				h2 {
+					font-size: $card-b-title-font-size-big-mobile;
+				}
+			}
+		}
+
+		// Description
+		.description {
+			display: inline-block;
+			width: 100%;
+
+			p {
+				font-weight: 300;
+				font-size: 13px;
+				color: $description-color;
+				letter-spacing: 0;
+				line-height: 19px;
+				margin: 0 0 15px;
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk card B  ======*/

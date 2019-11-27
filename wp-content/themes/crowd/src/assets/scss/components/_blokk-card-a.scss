@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/*====================================
+=            Blokk card A            =
+====================================*/
+
+$branding-dot-bg : #44C7F4;
+$branding-dot-border-color : $white;
+
+$title-color : #242E46;
+
+$description-color : $text-base-color;
+
+.blokk-card-a {
+	display: inline-block;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #E2E5EB;
+	box-shadow: 0 1px 2px 0 rgba(25,29,39,0.06);
+	border-radius: 4px;
+	padding: 13px 13px 25px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "";
+		height: 65px;
+		width: 1px;
+		background: #DEEEF3;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: -(65px + 20px);
+		z-index: 0;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		@include size(15px);
+		border-radius: 100%;
+		top: -(65px + 30px);
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: $branding-dot-bg;
+		border: 4px solid $branding-dot-border-color;
+	}
+
+	/* Thumbnail */
+	.card-thumbnail {
+		display: inline-block;
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+
+	/* Title with icon */
+	.title-with-icon {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin: -(78px/2) 0 11px;
+
+		// Icon
+		.icon {
+			display: inline-block;
+			@include size(78px);
+			line-height: 78px;
+			background: #fff;
+			border: 2px solid #FFFFFF;
+			box-shadow: 0 2px 8px 0 rgba(33,33,80,0.19);
+			border-radius: 100%;
+			margin: 0 0 11px;
+			overflow: hidden;
+			img {
+				display: inline-block;
+				margin: -7px auto 0;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		// Title
+		.title {
+			display: inline-block;
+			width: 100%;
+			h2 {
+				margin: 0;
+				font-weight: 600;
+				font-size: 21px;
+				color: $title-color;
+				letter-spacing: 0.25px;
+			}
+		}
+	}
+
+	/* Description */
+	.description {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin: 0 0 30px;
+		p {
+			max-width: 295px;
+			margin: auto auto 0;
+			font-weight: 300;
+			font-size: 12px;
+			color: $description-color;
+			letter-spacing: 0;
+			line-height: 24px;
+		}
+	}
+	
+	/* Progress Footer */
+	.progress-footer {
+		display: inline-block;
+		width: 100%;
+		padding: 0 15px;
+
+		// Progress bar
+		.progress-bar-i {
+			width: 100%;
+			height: 4px;
+			background: #F0F2F7;
+			border-radius: 100px;
+			border-radius: 50px;
+			position: relative;
+			overflow: hidden;
+			margin: 0 0 22px;
+
+			span {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				border-radius: 50px;
+			}
+		}
+
+		// Info
+		&.pledge {
+			.progress-bar-i {
+				span {
+					background: #44C7F4;
+				}
+			}
+		}
+
+		// Success
+		&.funded {
+			.progress-bar-i {
+				span {
+					background: #09C15A;
+					// width: 100% !important;
+				}
+			}
+		}
+
+		// Actions
+		.actions {
+			display: table;
+			width: 100%;
+
+			// Text
+			.text {
+				display: table-cell;
+				vertical-align: middle;
+				label {
+					font-weight: 600;
+					font-size: 21px;
+					color: #242E46;
+					letter-spacing: 0.25px;
+					position: relative;
+					margin: 0;
+
+					small {
+						font-weight: 300;
+						font-size: 10px;
+						color: #242E46;
+						letter-spacing: 0.12px;
+						position: absolute;
+						bottom: 5px;
+						right: -23px;
+						line-height: 1;
+					}
+				}
+			}
+
+			// Button
+			.button {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: right;
+
+				.btn {
+					display: inline-block;
+					border: 1px solid #09C15A;
+					border-radius: 100px;
+					padding: 0;
+					height: 26px;
+					line-height: 25px;
+					text-align: center;
+					padding: 0 15px;
+					font-size: 11px;
+					color: #09C15A;
+					letter-spacing: 0.13px;
+					background: transparent;
+					text-transform: uppercase;
+				}
+
+				span {
+					cursor: default;
+				}
+			}
+		}
+
+		// Info
+		&.pledge {
+			// Actions
+			.actions {
+				// Button
+				.button {
+					.btn {
+						border: 1px solid #44C7F4;
+						color: #44C7F4;
+					}
+				}
+			}
+		}
+
+		// success
+		&.funded {
+			// Actions
+			.actions {
+				// Button
+				.button {
+					.btn {
+						border: 1px solid #09C15A;
+						color: #09C15A;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk card A  ======*/

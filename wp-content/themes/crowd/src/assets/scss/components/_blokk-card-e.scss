@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*====================================
+=            Blokk card E            =
+====================================*/
+
+$icon-size : 70px;
+$icon-bg-color : #44C7F4;
+
+.blokk-card-e {
+	display: inline-block;
+	width: 100%;
+	padding: 30px 20px;
+	background: #FFFFFF;
+	border: 1px solid #D2DDF9;
+	border-radius: 3px;
+	position: relative;
+	text-align: center;
+
+	/* Card Thumbnail */
+	.card-thumbnail {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		margin: 0 0 25px;
+
+		// Image
+		img, svg {
+			// width: 100%;
+			// border-radius: 2px;
+		}
+	}
+
+	/* Card Data */
+	.card-data {
+		display: inline-block;
+		width: 100%;
+
+		// Addon
+		.addon {
+			width: 100%;
+			text-align: center;
+			margin: -($icon-size) 0 15px;
+			span {
+				display: inline-block;
+				@include size($icon-size);
+				line-height: $icon-size;
+				text-align: center;
+				background: $icon-bg-color;
+				border-radius: 100%;
+				img {}
+			}
+		}
+
+		// Title
+		.title {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 15px;
+
+			h2 {
+				margin: 0;
+				font-weight: 500;
+				font-size: 18px;
+				color: #2C2C2C;
+				letter-spacing: 0;
+				line-height: 24px;
+			}
+		}
+
+		// Description
+		.description {
+			display: inline-block;
+			width: 100%;
+
+			p {
+				font-weight: 300;
+				font-size: 13px;
+				color: #657396;
+				letter-spacing: 0;
+				line-height: 19px;
+				margin: 0 auto;
+				max-width: 246px;
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk card E  ======*/

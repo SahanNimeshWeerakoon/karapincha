@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*============================================
+=            About Us Description            =
+============================================*/
+
+.about-us-description {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 0 0 20px;
+
+	/* Branding line */
+	.blokk-branding-line {
+		margin: 15px 0 10px;
+	}
+
+	/* Section Description */
+	.section-description {
+		max-width: 754px;
+		margin-top: 10px;
+	}
+
+	/* Feature Blocks */
+	.blokk-feature-blocks-a {
+		display: inline-block;
+		width: 100%;
+		margin: 70px 0 0;
+	}	
+}
+
+/*=====  End of About Us Description  ======*/

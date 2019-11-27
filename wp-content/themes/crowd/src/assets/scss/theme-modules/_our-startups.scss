@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/*====================================
+=            Our Startups            =
+====================================*/
+
+.our-startups {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background: $white;
+
+	@media screen and (max-width: $big-mobile) {
+		// display: none;
+	}
+
+	/* Branding line */
+	.blokk-branding-line {
+		margin: 0 0 15px;
+	}	
+
+	/* Section Description */
+	.section-description {
+		max-width: 722px;
+	}
+}
+
+/*=====  End of Our Startups  ======*/
+
+
+/*======================================
+=            Startup Slider            =
+======================================*/
+
+.startup-slider {
+	display: inline-block;
+	width: 100%;
+	margin-top: 30px + 60px + 130px + 60px + 50px;
+	background: #F5F8FF;
+
+	@media screen and (max-width: $big-mobile) {
+		// display: none;
+	}
+
+	.slide-item {
+		outline: none;
+		padding: 0 30px;
+    	max-width: 430px;
+
+    	a {
+    		outline: none;
+    	}
+	}
+
+	.slick-current {
+		.blokk-card-a {
+			&:after {
+				@include size(20px);
+				top: -(65px + 33px);
+			}
+		}
+	}
+
+	.read-more {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin: 80px 0 95px;
+
+		@media screen and (max-width: $big-mobile) {
+			margin: 40px 0 95px;
+		}
+
+		a {
+			height: 43px;
+			line-height: 43px;
+			padding: 0;
+			min-width: 150px;
+			border: 1px solid #BEC2EB !important;
+			border-radius: 100px;
+			font-weight: 500;
+			font-size: 14px;
+			color: #5A64C2 !important;
+			letter-spacing: 0;
+			background: transparent !important;
+		}
+	}
+}
+
+/*=====  End of Startup Slider  ======*/

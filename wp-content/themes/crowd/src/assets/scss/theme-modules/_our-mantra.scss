@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*==================================
+=            Our Mantra            =
+==================================*/
+
+.our-mantra {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 0 0 60px;
+	background: $white;
+
+	/* Branding line */
+	.blokk-branding-line {
+		margin: 15px 0 10px;
+	}
+
+	/* Section Description */
+	.section-description {
+		max-width: 600px;
+	}
+
+	/* Feature Blocks */
+	.blokk-feature-blocks-a {
+		display: inline-block;
+		width: 100%;
+		margin: 70px 0 0;
+	}
+	
+}
+
+/*=====  End of Our Mantra  ======*/

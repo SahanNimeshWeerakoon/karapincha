@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*===================================
+=            How we help            =
+===================================*/
+
+.how-we-help {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 0 0 95px;
+	position: relative;
+	z-index: 1;
+
+	/* Branding line */
+	.blokk-branding-line {
+		margin: 0 0 30px;
+	}	
+
+	/* Section Description */
+	.section-description {
+		max-width: 835px;
+		margin: 10px 0 70px;
+	}
+
+	/* Blokk card D */
+	.blokk-card-d {
+		max-width: 325px;
+	}
+
+	/* Column */
+	.col {
+		@media screen and (max-width: $big-mobile) {
+			margin: 0 0 30px;
+
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
+}
+
+/*=====  End of How we help  ======*/

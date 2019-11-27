@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*======================================
+=            Invest With us            =
+======================================*/
+
+.invest-with-us {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 0 0 (95px + 100px);
+	padding: 30px 0 0;
+	background: #F5F8FF;
+
+	@media screen and (max-width: $big-mobile) {
+		margin-bottom: 130px;	
+	}
+
+	/* Branding line */
+	.blokk-branding-line {
+		margin: 0 0 30px;
+	}	
+
+	/* Section Description */
+	.section-description {
+		max-width: 835px;
+		margin: 0 0 70px;
+	}
+
+	/* Blokk card e */
+	.blokk-card-e {
+		// max-width: 325px;
+
+		/* Description */
+		.description {
+			// max-width: 239px;
+		}
+	}
+
+	/* Blocks */
+	.blocks {
+		margin: -70px 0 0;
+		position: relative;
+		bottom: -90px;
+
+		@media screen and (max-width: $big-mobile) {
+			margin-bottom: -60px;
+
+			.col {
+				margin-bottom: 90px;
+			}
+		}
+	}
+	
+}
+
+/*=====  End of Invest With us  ======*/

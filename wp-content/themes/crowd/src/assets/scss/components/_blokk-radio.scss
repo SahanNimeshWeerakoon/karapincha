@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*=======================================
+=            Custom Checkbox            =
+=======================================*/
+
+$am-radio-width : 18px !default;
+$am-radio-height : $am-radio-width !default;
+$am-radio-font-size : 10px !default;
+
+$am-radio-default-bg : #44C7F4 !default;
+
+$border-color : #D2DDF9;
+
+// $checkbox-primary-bg:            $app-primary !default;
+// $checkbox-primary-text:          $white !default;
+// $checkbox-primary-border:        $app-primary !default;
+
+// $checkbox-disabled-bg:            $app-disabled !default;
+// $checkbox-disabled-text:          $white !default;
+// $checkbox-disabled-border:        $app-disabled !default;
+
+// $checkbox-success-bg:            $app-success !default;
+// $checkbox-success-text:          $white !default;
+// $checkbox-success-border:        $app-success !default;
+
+// $checkbox-info-bg:               $app-info !default;
+// $checkbox-info-text:             $white !default;
+// $checkbox-info-border:           $app-info !default;
+
+// $checkbox-warning-bg:            $app-warning !default;
+// $checkbox-warning-text:          $white !default;
+// $checkbox-warning-border:        $app-warning !default;
+
+// $checkbox-danger-bg:             $app-danger !default;
+// $checkbox-danger-text:           $white !default;
+// $checkbox-danger-border:         $app-danger !default;
+
+// checkboxs
+.blokk-radio{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 0 15px;
+
+	input{
+		opacity: 0;
+		display: none;
+	}
+
+	label{
+		@extend %no-select;
+		float: left;
+		position: relative;
+		font-weight: normal;
+		margin: 0;
+		padding-left: 25px !important;
+		cursor: pointer;
+
+		&::before {
+		    content: "";
+		    @include prefix(transition, 0.1s, moz webkit o ms);
+		    @include border-radius(100%);
+		    @include position(absolute, 2px, initial, initial, 0);
+		    background-color: $white;
+		    border: 2px solid $border-color;
+		    width: $am-radio-width;
+		    height: $am-radio-height;
+		    line-height: $am-radio-height - 4;
+		    outline: none !important;
+		    font-family: $fontawesome;
+		    text-align: center;
+		    padding: 0;
+		}
+	}
+
+	input[type="radio"]:checked + label::before {
+	    background-color: $am-radio-default-bg;
+	    border-color: $am-radio-default-bg;
+	    content: "\f00c";
+	    color: $white;
+	    font-size: $am-radio-font-size;
+	}
+
+	&.radio-inline{
+		padding: 0;
+		margin: 0 10px 0 0;
+		vertical-align: top;
+	}
+}
+
+// .checkbox-disabled{
+// 	@include checkbox-variant($checkbox-disabled-bg, $checkbox-disabled-border, $checkbox-disabled-text);
+
+// 	label{
+// 		cursor: not-allowed;
+// 		&::before {
+// 		    background-color: $checkbox-disabled-bg;
+// 		    border-color: $checkbox-disabled-border;
+// 		}
+// 	}
+// }
+
+// .checkbox-primary{
+// 	@include checkbox-variant($checkbox-primary-bg, $checkbox-primary-border, $checkbox-primary-text);
+// }
+
+// .checkbox-success {
+//   @include checkbox-variant($checkbox-success-bg, $checkbox-success-border, $checkbox-success-text);
+// }
+
+// .checkbox-info {
+//   @include checkbox-variant($checkbox-info-bg, $checkbox-info-border, $checkbox-info-text);
+// }
+
+// .checkbox-warning {
+//   @include checkbox-variant($checkbox-warning-bg, $checkbox-warning-border, $checkbox-warning-text);
+// }
+
+// .checkbox-danger {
+//   @include checkbox-variant($checkbox-danger-bg, $checkbox-danger-border, $checkbox-danger-text);
+// }
+
+/*=====  End of Custom Checkbox  ======*/

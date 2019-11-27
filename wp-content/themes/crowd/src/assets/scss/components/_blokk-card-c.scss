@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/*====================================
+=            Blokk card C            =
+====================================*/
+
+$card-c-title-font-size : 29px;
+$card-c-title-font-size-tablet : 29px;
+$card-c-title-font-size-big-mobile : 21px;
+$card-c-title-font-size-mobile : 21px;
+
+$card-c-title-color : #242E46;
+
+$card-c-description-color : $text-base-color;
+
+$card-c-cta-btn-font-size : 16px;
+$card-c-cta-btn-font-size-big-mobile : 14px;
+
+$card-c-cta-btn-height : 55px;
+$card-c-cta-btn-height-big-mobile : 43px;
+
+$card-c-cta-btn-width : 188px;
+$card-c-cta-btn-width-big-mobile : 132px;
+
+$card-c-cta-btn-color : $white;
+$card-c-cta-btn-bg-color : #F47721;
+
+.blokk-card-c {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	padding: 50px 0;
+
+	@media screen and (max-width: $big-mobile) {
+		max-width: 330px;
+	}
+
+	/* Title */
+	.title {
+		display: inline-block;
+		width: 100%;
+		margin: 0 0 10px;
+
+		h3 {
+			font-weight: 600;
+			font-size: $card-c-title-font-size;
+			color:  $card-c-title-color;
+			letter-spacing: 0.34px;
+			line-height: 40px;
+			margin: 0;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			h3 {
+				font-size: $card-c-title-font-size-big-mobile;
+				letter-spacing: 0.25px;
+				line-height: 40px;
+			}
+		}
+	}
+
+	/* Description */
+	.description {
+		display: inline-block;
+		width: 100%;
+		margin: 0 0 25px;
+
+		p {
+			font-weight: 300;
+			font-size: 14px;
+			color: $card-c-description-color;
+			letter-spacing: 0.16px;
+			line-height: 23px;
+			margin: 0;
+		}
+	}
+	
+	/* Action */
+	.action {
+		display: inline-block;
+		width: 100%;
+		margin: 0 0 25px;
+
+		.btn {
+			background: $card-c-cta-btn-bg-color;
+			box-shadow: 0 2px 7px 0 rgba(100,115,157,0.27);
+			border-radius: 3px;
+			border: none;
+			padding: 0 15px;
+			height: $card-c-cta-btn-height;
+			line-height: $card-c-cta-btn-height;
+			min-width: $card-c-cta-btn-width;
+			text-align: center;
+			font-weight: 600;
+			font-size: $card-c-cta-btn-font-size;
+			color: $card-c-cta-btn-color;
+			letter-spacing: 0;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			.btn {
+				font-size: $card-c-cta-btn-font-size-big-mobile;
+				height: $card-c-cta-btn-height-big-mobile;
+				line-height: $card-c-cta-btn-height-big-mobile;
+				min-width: $card-c-cta-btn-width-big-mobile;
+			}
+		}
+	}
+
+	/* Note */
+	.note {
+		display: inline-block;
+		margin: auto;
+
+		p {
+			font-weight: 300;
+			font-size: 12px;
+			color: $card-c-description-color;
+			letter-spacing: 0.14px;
+			line-height: 21px;
+			margin: 0;
+		}
+	}
+}
+
+/*=====  End of Blokk card C  ======*/

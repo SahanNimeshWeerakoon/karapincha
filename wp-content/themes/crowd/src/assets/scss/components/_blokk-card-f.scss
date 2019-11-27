@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/*====================================
+=            Blokk card F            =
+====================================*/
+
+$icon-size : 160px;
+$icon-size-big-mobile : 60px;
+
+$icon-bg-color : #fff;
+
+$title-color : rgb(244, 119, 33);
+
+$title-size : 16px;
+$title-size-big-mobile : 16px;
+
+$sub-title-color : #747d94;
+
+$sub-title-size : 11px;
+$sub-title-size-big-mobile : 13px;
+
+$description-color : $text-base-color;
+
+$description-size : $font-size-md;
+$description-size-big-mobile : $font-size-md;
+
+$social-link-color : #9aa2b3;
+
+.blokk-card-f {
+	display: inline-block;
+	width: 100%;
+
+	@media screen and (max-width: $big-mobile) {
+		max-width: 330px;
+		margin: 0 0 35px;
+		text-align: center;
+	}
+	
+	/* Icon */
+	.icon {
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin: 0 0 15px;
+
+		@media screen and (max-width: $big-mobile) {
+			text-align: center;
+		}
+
+		span {
+			@include size($icon-size);
+			display: inline-block;
+			line-height: $icon-size;
+			text-align: center;
+			background: $icon-bg-color;
+			border-radius: 100%;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	/* Data */
+	.data {
+		
+		/* Title */
+		.title {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			margin: 0 0 3px;
+
+			@media screen and (max-width: $big-mobile) {
+				text-align: center;
+			}
+
+			label {
+				font-size: $title-size;
+				color: $title-color;
+				letter-spacing: 0.47px;
+				margin: 0;
+				font-weight: 500;
+			}
+		}
+
+		/* Sub-title */
+		.sub-title {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			margin: 0 0 8px;
+
+			@media screen and (max-width: $big-mobile) {
+				text-align: center;
+			}
+
+			label {
+				font-weight: 500;
+				font-size: $sub-title-size;
+				color: $sub-title-color;
+				text-transform: uppercase;
+				margin: 0;
+			}
+		}
+		
+
+		/* Description */
+		.description {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+
+			p {
+				font-size: $description-size;
+				color: $description-color;
+				letter-spacing: 0;
+				line-height: 24px;
+				font-weight: 300;
+				max-width: 100%;
+
+				@media screen and (max-width: $big-mobile) {
+					line-height: 24px;
+					max-width: 330px;
+					margin: auto;
+					text-align: justify;
+		    		text-justify: inter-word;
+				}
+			}
+		}
+
+		/* Social links */
+		.social-links {
+			display: inline-block;
+			width: 100%;
+			@include reset();
+			margin-bottom: 20px;
+			text-align: center;
+			// margin-left: -8px;
+
+			> span {
+				display: inline;
+
+				a {
+					color: $social-link-color;
+					padding: 5px 8px 5px 0;
+
+					&:hover, &:focus {
+						color: $link-color;
+					}
+
+					i.fa {}
+
+					span {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk card F  ======*/

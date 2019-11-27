@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="42px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>traction</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="traction" fill="#44C7F4" fill-rule="nonzero">
+            <g id="Group">
+                <path d="M45,16 C44.447,16 44,16.448 44,17 L44,40 L2,40 L2,25 C2,24.447 1.552,24 1,24 C0.448,24 0,24.447 0,25 L0,41 C0,41.553 0.448,42 1,42 L45,42 C45.553,42 46,41.553 46,41 L46,17 C46,16.448 45.553,16 45,16 Z" id="Shape"></path>
+                <path d="M45,0 L37,0 C36.447,0 36,0.448 36,1 C36,1.552 36.447,2 37,2 L42.586,2 L24.938,19.647 L13.64,10.232 C13.334,9.977 12.907,9.928 12.553,10.106 L0.553,16.106 C0.059,16.353 -0.141,16.954 0.106,17.448 C0.353,17.942 0.952,18.144 1.448,17.895 L12.863,12.187 L24.36,21.768 C24.546,21.923 24.773,22 25,22 C25.257,22 25.513,21.901 25.707,21.707 L44,3.414 L44,9 C44,9.552 44.447,10 45,10 C45.553,10 46,9.552 46,9 L46,1 C46,0.448 45.553,0 45,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

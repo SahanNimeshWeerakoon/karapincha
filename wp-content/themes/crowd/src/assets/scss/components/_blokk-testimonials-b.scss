@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/*============================================
+=            Blokk Testimonials B            =
+============================================*/
+
+$testimony-title-font-size : 24px;
+$testimony-title-font-size-big-mobile : 22px;
+
+$testimony-description-font-size : 17px;
+$testimony-description-font-size-big-mobile : 14px;
+
+$testimony-description-color : #657396;
+$testimony-description-color : $text-base-color;
+
+$author-name-font-size : 17px;
+$author-name-font-size-big-mobile : 14px;
+$author-name-color : #242E46;
+
+$author-jobtitle-font-size : 13px;
+$author-jobtitle-font-size-big-mobile : 12px;
+$author-jobtitle-color : #8D99B7;
+
+.blokk-testimonials-b {
+	display: inline-block;
+	width: 100%;
+
+	/* Big Image */	
+	.big-image {
+		display: inline-block;
+		width: 100%;
+		height: 570px;
+		position: relative;
+		z-index: 0;
+		background: {
+			// color: #242E46;
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+		}
+
+		@media screen and (max-width: $big-mobile) {
+			height: 350px;
+		}
+	}
+
+	/* Slider Container */
+	.slider-container {
+		.inner {
+			background: #FFFFFF;
+			border: 1px solid #E2E5EB;
+			box-shadow: 0 1px 2px 0 rgba(25,29,39,0.06);
+			border-radius: 4px;
+			padding: 40px 80px 45px;
+			position: relative;
+			z-index: 9;
+			margin: -180px auto 0;
+
+			@media screen and (max-width: $big-mobile) {
+				padding: 40px 30px 45px;
+			}
+		}
+	}
+	
+
+	/* Testimonial Controls */
+	// .testimonial-controls {
+	// 	position: relative;
+	// 	z-index: 999;
+
+	// 	.container {
+	// 		background: #FFFFFF;
+	// 		border-top: none !important;
+	// 		box-shadow: 0 1px 2px 0 rgba(25,29,39,0.06);
+	// 		border-radius: 4px;
+	// 		padding: 0 80px 45px !important;
+
+	// 		@media screen and (max-width: $big-mobile) {
+	// 			padding: 0 30px 45px !important;
+	// 		}
+	// 	}
+
+	// 	.testimony {
+	// 		margin: -10px 0 0 !important;
+
+	// 		.slick-list {
+	// 			padding-top: 40px;
+	// 			border-top: 1px solid #DEEEF3;
+	// 		}
+	// 	}
+	// }
+
+	// /* Testimonials */
+	// .testimonials {
+	// 	display: inline-block;
+	// 	width: 100%;
+
+	// }
+
+	/* Testimonials Wrapper */	
+	.testimonials-wrapper {
+		display: inline-block;
+		width: 100%;
+
+		// Testimonial Item
+		.testimonial-item {
+			display: inline-block;
+			width: 100%;
+			transition: opacity 300ms ease-in-out;
+			outline: none;				
+
+			// Testimony
+			.testimony {
+				display: inline-block;
+				width: 100%;
+				// margin: -180px auto 0;
+
+				@media screen and (max-width: $big-mobile) {
+					padding: 0 15px;
+				}
+
+				// Title
+				.title {
+					display: inline-block;
+					width: 100%;
+					margin: 0 0 30px;
+
+					h2 {
+						margin: 0;
+						font-size: $testimony-title-font-size;
+					}
+
+					@media screen and (max-width: $big-mobile) {
+						h2 {
+							font-size: $testimony-title-font-size-big-mobile;
+						}
+					}
+				}
+
+				// Description
+				.description {
+					display: inline-block;
+					width: 100%;
+					margin: 0 0 30px;
+					padding: 0 0 30px;
+
+					p {
+						font-weight: 300;
+						font-size: $testimony-description-font-size;
+						color: $testimony-description-color;
+						letter-spacing: -0.1px;
+						line-height: 29px;
+						overflow-wrap: break-word;
+						//height: 90px;
+
+						&:last-of-type {
+							margin: 0;
+						}
+					}
+
+					@media screen and (max-width: $big-mobile) {
+						p {
+							font-size: $testimony-description-font-size-big-mobile;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* Testimonials Controls */
+	.testimonial-controls {
+		border-top: 1px solid #DEEEF3;
+		padding-top: 40px;
+		@media screen and (max-width: $big-mobile) {
+			padding: 40px 15px 0;
+		}
+
+		.slick-track {
+			margin-left: initial;
+			margin-right: initial;
+		}
+
+		// Author
+		.author {
+			display: inline-block;
+			width: 100%;
+			// opacity: .5;
+			outline: none;
+
+			&.slick-current {
+				opacity: 1;
+			}
+
+			// Author Picture
+			.picture {
+				display: table-cell;
+				vertical-align: middle;
+				@include size(58px);
+
+				img {
+					@include size(58px);
+					border-radius: 100%;
+				}
+			}
+
+			// Author Data
+			.author-data {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 0 0 30px;
+				span {
+					display: inline-block;
+					width: 100%;
+
+					// Name
+					&.name {
+						font-weight: 500;
+						font-size: $author-name-font-size;
+						color: $author-name-color;
+						letter-spacing: 0.2px;
+						margin: 0 0 5px;
+					}
+					
+					// Job Title
+					&.job-title {
+						font-weight: 300;
+						font-size: $author-jobtitle-font-size;
+						color: $author-jobtitle-color;
+						letter-spacing: 0.15px;
+					}
+
+					@media screen and (max-width: $big-mobile) {
+						// Name
+						&.name {
+							font-size: $author-name-font-size-big-mobile;
+						}
+						
+						// Job Title
+						&.job-title {
+							font-size: $author-jobtitle-font-size-big-mobile;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Blokk Testimonials B  ======*/

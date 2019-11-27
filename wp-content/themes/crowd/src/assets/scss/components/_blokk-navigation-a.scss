@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/*==========================================
+=            Blokk Navigation A            =
+==========================================*/
+
+$logo-width : 145px;
+$logo-height : 50px;
+$logo-url : 'assets/images/ci-logo.png';
+$logo-url-single : 'assets/images/cl-logo-black.svg';
+$hamburger-height : $logo-height; // (Height same as the Logo)
+$menu-height : $logo-height; // (Height same as the Logo)
+$link-default-color: $white;
+$link-default-color-single: #2A3F5F;
+
+.blokk-navigation-a {
+	padding: 25px 0 0;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+    z-index: 999;
+
+	/* Container */
+	.container {
+		width: 100%;
+		padding: 0 80px;
+
+		@media screen and (max-width: $small-desktop) {
+			padding: 0 15px;
+		}
+	}
+
+	/* Logo */
+	.logo {
+		float: left;
+
+		a.logo-link {
+			display: inline-block;
+			@include reset();
+			@include size($logo-width, $logo-height);
+			background: {
+				image : url($logo-url);
+				size: contain;
+				position: center left;
+				repeat: no-repeat;
+			}
+			text-indent: -99999px;
+		}
+	}
+	
+	/* Hamburger Toggle */	
+	.hamburger-toggle {
+		float: right;
+		padding: 0 0 0 20px;
+
+		button {
+			@include reset();
+			background: transparent;
+			border: none;
+			outline: none;
+			appearance: none;
+			line-height: $hamburger-height;
+		}
+	}
+	
+	/* Main Menu */
+	.main-menu {
+		float: right;
+
+		ul {
+			@include reset();
+			li {
+				display: inline;
+				a {
+					float: left;
+					padding: 0 20px;
+					height: $menu-height;
+					line-height: $menu-height;
+					color: $link-default-color;
+
+					&.active{}
+					&:focus, &:hover{}
+				}
+			}
+		}
+	}
+
+	/* IF Post Template */
+	&.single, &.fixed {
+
+		/* Logo */
+		.logo {
+			a.logo-link {
+				background: {
+					image : url($logo-url-single);
+				}
+			}
+		}
+		
+		/* Hamburger Toggle */	
+		.hamburger-toggle {
+			button {}
+		}
+		
+		/* Main Menu */
+		.main-menu {
+
+			ul {
+				li {
+					a {
+						color: $link-default-color-single;
+
+						&.active{}
+						&:focus, &:hover{}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $big-mobile) {
+		/* Main Menu */
+		.main-menu {
+			display: none;
+		}
+	}
+
+	/* Fixed Header */
+	&.fixed,&.single {
+		background: $white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 99;
+		padding: 25px 0 15px;
+		box-shadow: 0 2px 16px 0 rgba(25,29,39,0.09);
+		border-bottom: 1px solid #ecf4ff;
+	}
+}
+
+/*=====  End of Blokk Navigation A  ======*/
+
+
+// /*==========================================
+// =            Blokk Navigation B            =
+// ==========================================*/
+
+// $logo-width : 145px;
+// $logo-height : 34px;
+// $logo-url : 'assets/images/cl-logo-black.svg';
+// $hamburger-height : 34px; // (Height same as the Logo)
+// $menu-height : 34px; // (Height same as the Logo)
+// $link-default-color: #2A3F5F;
+
+// .blokk-navigation-b {
+
+// 	/* Logo */
+// 	.logo {
+// 		float: left;
+
+// 		a.logo-link {
+// 			display: inline-block;
+// 			@include reset();
+// 			@include size($logo-width, $logo-height);
+// 			background: {
+// 				image : url($logo-url);
+// 				size: contain;
+// 			}
+// 			text-indent: -99999px;
+// 		}
+// 	}
+
+// 	/* Hamburger toggle */
+// 	.hamburger-toggle {
+// 		float: right;
+// 		padding: 0 0 0 20px;
+
+// 		button {
+// 			@include reset();
+// 			background: transparent;
+// 			border: none;
+// 			outline: none;
+// 			appearance: none;
+// 			line-height: $hamburger-height;
+// 		}
+// 	}
+	
+// 	/* Main Menu */
+// 	.main-menu {
+// 		float: right;
+
+// 		ul {
+// 			@include reset();
+// 			li {
+// 				display: inline;
+// 				a {
+// 					float: left;
+// 					padding: 0 20px;
+// 					height: $menu-height;
+// 					line-height: $menu-height;
+// 					color: $link-default-color;
+
+// 					&.active{}
+
+// 					&:focus,&:hover{
+
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+	
+// }
+
+// /*=====  End of Blokk Navigation B  ======*/

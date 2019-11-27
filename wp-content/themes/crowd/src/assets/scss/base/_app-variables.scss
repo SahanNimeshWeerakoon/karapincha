@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*============================
+=            Type            =
+============================*/
+
+$font-size-xs : 11px;
+$font-size-sm : 12px;
+$font-size-md : 14px;
+$font-size-lg : 16px;
+$font-size-xl : 18px;
+$font-size-xxl : 22px;
+$font-size-xxxl : 30px;
+
+$font-weight-xs : 100;
+$font-weight-sm : 300;
+$font-weight-md : 400;
+$font-weight-lg : 500;
+$font-weight-xl : 700;
+
+/*=====  End of Type  ======*/
+
+
+/*===================================
+=            Type colors            =
+===================================*/
+
+$text-base-color: 		$charcoal-grey;
+$body-bg-color: 		$white;
+$text-primary-color: 	$marine;
+$text-secondary-color: 	$dusty-orange;
+$text-title-color: 		$marine;
+$text-minority-color: 	$bright-cyan;
+$text-light-color: 		$cool-grey;
+$link-color:			$dusty-orange;
+
+/*=====  End of Type colors  ======*/
+
+
+/*==================================
+=            App colors            =
+==================================*/
+
+$app-priority:        $bright-cyan !default;
+$app-primary:         $bright-cyan !default;
+$app-secondary:       $bright-cyan !default;
+$app-success:         $cool-green !default;
+$app-info:            $bright-cyan !default;
+$app-default:         $marine !default;
+$app-warning:         $dusty-orange !default;
+$app-danger:          $red !default;
+$app-disabled:        #c1ced8 !default;
+
+/*=====  End of App colors  ======*/
+
+
+
+/*============================
+=            Body            =
+============================*/
+
+$body-bg: $white;
+$app-font-family: $montserrat;
+
+$app-default-border: #dfdcdc;
+$app-input-border: #dde4ea;
+$separator-color: #dfdcdc;
+
+/*=====  End of Body  ======*/
+
+
+
+//=======================================
+//            Responsive sizes           
+//=======================================
+
+$small-desktop : 1024px;
+$smaller-desktop : 992px;
+$tablet : 769px;
+$big-mobile : 767px;
+$big-mobile-horizontal : 680px;
+$small-mobile : 375px;
+$small-mobile-horizontal : 480px;
+
+//=====  End of Responsive sizes  =======
+
+
+/*==============================
+=            Header            =
+==============================*/
+
+$app-header-height : 110px;
+
+/*=====  End of Header  ======*/
+
+
+/*============================
+=            Hero            =
+============================*/
+
+$app-hero-height : 600px;
+$app-hero-height-md : 500px;
+$app-hero-padding : 118px 0 0;
+$app-hero-padding-md : 90px 0 0;
+$app-hero-padding-sm : 60px 0 0;
+$app-hero-bottom-space : 117px;
+$app-hero-bottom-space-md : 80px;
+
+/*=====  End of Hero  ======*/
+

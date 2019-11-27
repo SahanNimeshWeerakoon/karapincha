@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="8.5" cy="8.5" r="8.5"></circle>
+    </defs>
+    <g id="Campaign-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-185.000000, -279.000000)">
+        <g id="User" transform="translate(144.000000, 265.000000)">
+            <g id="Group-2" transform="translate(43.000000, 16.000000)">
+                <g id="Oval-2">
+                    <use fill="#09C15A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <circle stroke="#FFFFFF" stroke-width="1.5" cx="8.5" cy="8.5" r="9.25"></circle>
+                </g>
+                <g id="noun_1318226_cc" transform="translate(5.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#FFFFFF">
+                    <g id="Group">
+                        <g id="Shape">
+                            <path d="M0.563022488,3.11608379 C0.462548877,3.01656707 0.305466846,3.02277278 0.21216992,3.12994463 C0.118872993,3.23711649 0.12469085,3.40467065 0.225164461,3.50418737 L1.96298676,5.22545898 C2.06972276,5.33117843 2.2384563,5.31662449 2.32788061,5.19398543 L5.80352521,0.427387123 C5.88770286,0.311943501 5.86820586,0.145569201 5.75997746,0.0557797292 C5.65174907,-0.0340097688 5.49577316,-0.013212968 5.41159553,0.102230653 L2.10229643,4.64069797 L0.563022488,3.11608379 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

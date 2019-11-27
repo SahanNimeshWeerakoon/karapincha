@@ -1,0 +1,137 @@
+/*=========================================
+=            Slide Transitions            =
+=========================================*/
+
+// Moz Keyframes
+@-moz-keyframes slideInBody{ 
+	0% {-moz-transform: translateX(0px);} 
+	100%{-moz-transform: translateX(-80px);} 
+} 
+@-moz-keyframes slideOutBody{ 
+	0% {-moz-transform: translateX(-80px);} 
+	100%{-moz-transform: translateX(0px);} 
+} 
+
+@-moz-keyframes slideOutQuickR{ 
+	0% {-moz-transform: translateX(0px);} 
+	100%{-moz-transform: translateX(110%);} 
+} 
+@-moz-keyframes slideInQuickR{ 
+	0% {-moz-transform: translateX(110%);} 
+	100%{-moz-transform: translateX(0px);} 
+}
+@-moz-keyframes fadeOut{
+  0%   { opacity:1; }
+  100%  { opacity:0; }
+}
+@-moz-keyframes fadeIn{
+  0%   { opacity:0; }
+  100%  { opacity:1; }
+}
+// Webkit Keyframes
+@-webkit-keyframes slideInBody{ 
+	0% {-webkit-transform: translateX(0px);} 
+	100%{-webkit-transform: translateX(-80px);} 
+} 
+@-webkit-keyframes slideOutBody{ 
+	0% {-webkit-transform: translateX(-80px);} 
+	100%{-webkit-transform: translateX(0px);} 
+} 
+
+@-webkit-keyframes slideOutQuickR{ 
+	0% {-webkit-transform: translateX(0px);} 
+	100%{-webkit-transform: translateX(110%);} 
+} 
+@-webkit-keyframes slideInQuickR{ 
+	0% {-webkit-transform: translateX(110%);} 
+	100%{-webkit-transform: translateX(0px);} 
+}
+@-webkit-keyframes fadeOut{
+  0%   { opacity:1; }
+  100%  { opacity:0; }
+}
+@-webkit-keyframes fadeIn{
+  0%   { opacity:0; }
+  100%  { opacity:1; }
+}
+// Global Keyframes
+@keyframes slideInBody{ 
+	0% {transform: translateX(0px);} 
+	100%{transform: translateX(-80px);} 
+} 
+@keyframes slideOutBody{ 
+	0% {transform: translateX(-80px);} 
+	100%{transform: translateX(0px);} 
+} 
+
+@keyframes slideOutQuickR{ 
+	0% {transform: translateX(0px);} 
+	100%{transform: translateX(110%);} 
+} 
+@keyframes slideInQuickR{ 
+	0% {transform: translateX(110%);} 
+	100%{transform: translateX(0px);} 
+}
+@keyframes fadeOut{
+  0%   { opacity:1; }
+  100%  { opacity:0; }
+}
+@keyframes fadeIn{
+  0%   { opacity:0; }
+  100%  { opacity:1; }
+}
+
+.no-animation #nav {
+	-moz-transform: translateX(110%);
+	-webkit-transform: translateX(110%);
+	transform: translateX(110%);
+}
+
+.notSlided #nav {
+	-moz-transform: translateX(110%);
+	-webkit-transform: translateX(110%);
+	transform: translateX(110%);
+
+  	-moz-animation: slideOutQuickR 0.2s linear;
+  	-webkit-animation: slideOutQuickR 0.2s linear;
+  	animation: slideOutQuickR 0.2s linear;
+}
+
+.slided #nav {
+  -moz-animation: slideInQuickR 0.1s linear;
+  -webkit-animation: slideInQuickR 0.1s linear;
+  animation: slideInQuickR 0.1s linear;
+
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.no-animation .body-wrap {
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.notSlided .body-wrap {
+  	-moz-transform: translateX(0px);
+  	-webkit-transform: translateX(0px);
+	transform: translateX(0px);
+
+  	-moz-animation: slideOutBody 0.2s linear;
+  	-webkit-animation: slideOutBody 0.2s linear;
+  	animation: slideOutBody 0.2s linear;
+}
+
+.slided .body-wrap {
+  	-moz-animation: slideInBody 0.1s linear;
+  	-webkit-animation: slideInBody 0.1s linear;
+  	animation: slideInBody 0.1s linear;
+
+  	-moz-animation-fill-mode: forwards;
+  	-webkit-animation-fill-mode: forwards;
+  	animation-fill-mode: forwards;
+}
+
+
+/*-----  End of Slide Transitions  ------*/
